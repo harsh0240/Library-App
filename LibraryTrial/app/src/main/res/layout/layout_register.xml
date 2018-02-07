@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register"
+    android:background="@color/colorAccentTrans"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="38dp"
+    android:paddingRight="38dp"
+    android:paddingLeft="38dp"
+    android:paddingBottom="18dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Library ID (Ex:17JE3339)"
+        android:textSize="16sp"
+        android:id="@+id/lidr"
+        android:background="#2fffffff"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:textColorHint="#7effffff"
+        android:inputType="textVisiblePassword"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#d1ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:textSize="16sp"
+        android:id="@+id/remail"
+        android:background="#2fffffff"
+        android:layout_marginTop="20dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:textColorHint="#7effffff"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#d1ffffff" />
+
+    <EditText
+        android:id="@+id/rpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#2fffffff"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:textColor="#d1ffffff"
+        android:textColorHint="#7effffff"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:id="@+id/crpassword"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:background="#2fffffff"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:textColorHint="#7effffff"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#d1ffffff" />
+
+
+
+    <ProgressBar
+        android:id="@+id/rprogressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:theme="@style/ProgressBar.Blue"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:text="Register"
+        android:fontFamily="@font/montserrat_black"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryTrans"
+    tools:context="com.example.user.librarytrial.LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="38dp"
+    android:paddingLeft="38dp"
+    android:paddingRight="38dp"
+    android:paddingBottom="18dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:paddingBottom="72dp"
+        android:src="@drawable/ic_login" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Library ID (Ex:17JE3339)"
+        android:id="@+id/lidsi"
+        android:textSize="16sp"
+        android:background="#2fffffff"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:allowUndo="false"
+        android:textColorHint="#7effffff"
+        android:inputType="textVisiblePassword"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="#d1ffffff" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:fontFamily="@font/montserrat_regular"
+        android:id="@+id/sipassword"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:background="#2fffffff"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="15dp"
+        android:textColorHint="#7effffff"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        android:textColor="#d1ffffff"/>
+
+    <ProgressBar
+        android:id="@+id/siprogressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:theme="@style/ProgressBar.Green"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:text="Log in"
+        android:fontFamily="@font/montserrat_black"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dip"
+        android:background="@null"
+        android:text="@string/btn_forgot_password"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent" />
+</LinearLayout>
